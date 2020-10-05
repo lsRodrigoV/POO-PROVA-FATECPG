@@ -6,7 +6,6 @@
 package br.edu.fatecpg.poo;
 
 import java.util.ArrayList;
-import java.util.List;
 
 /**
  *
@@ -66,6 +65,7 @@ public class Disciplina {
        list.add(new Disciplina("Programação Orientada a Objeto","Introdução à orientação a objetos."
                + " Conceitos básicos e terminologia de Programação orientada objetos."
                + " Desenvolvimento de aplicações em uma linguagem orientada a objetos. " ,4));
+       
        
        return list;
     }

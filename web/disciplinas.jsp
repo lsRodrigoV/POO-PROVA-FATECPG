@@ -11,17 +11,8 @@
     <head>
         <% 
            Disciplina disciplinas = new Disciplina();
-           ArrayList<Disciplina> disciplinaList = disciplinas.getList();
-  
-                
-            ArrayList<Disciplina> disciplinasList = (ArrayList) application.getAttribute("disciplinasList");
-            if (disciplinasList == null) {
-                disciplinasList = new ArrayList<>();
-                disciplinasList.add(new Disciplina("Programação Orientada a Objeto", "Introdução à orientação a objetos."
-                        + " Conceitos básicos e terminologia de Programação orientada objetos." 
-                        + " Desenvolvimento de aplicações em uma linguagem orientada a objetos. ", 4));
-                application.setAttribute("disciplinasList", disciplinasList);
-            }
+           ArrayList<Disciplina> disciplinasList = disciplinas.getList();   
+            
             if(request.getParameter("def")!=null){
                 int i = Integer.parseInt(request.getParameter("indice"));
                 Disciplina alt = disciplinasList.get(i);
